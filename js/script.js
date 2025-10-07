@@ -1,4 +1,5 @@
 var counterContainer = document.querySelector(".website-counter");
+<<<<<<< HEAD
 var visitCount = localStorage.getItem("page_view");visitCount
 
 if(visitCount){
@@ -12,6 +13,14 @@ counterContainer.innerHTML = visitCount;
 
 //Update local storage value
 localStorage.setItem("page_view", visitCount);
+=======
+var visitCount = parseInt(localStorage.getItem("page_view") || "0", 10);
+visitCount = visitCount + 1;
+localStorage.setItem("page_view", String(visitCount));
+if (counterContainer) {
+counterContainer.textContent = visitCount;
+}
+>>>>>>> 217b761 (Reinitialized repo)
 
 var faq = document.getElementsByClassName("faq-page");
 var i;
