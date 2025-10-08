@@ -6,7 +6,7 @@ if (counterContainer) {
 counterContainer.textContent = visitCount;
 }
 
-q = document.getElementsByClassName("faq-page");
+var faq = document.getElementsByClassName("faq-page");
 var i;
 
 for (i = 0; i < faq.length; i++) {
